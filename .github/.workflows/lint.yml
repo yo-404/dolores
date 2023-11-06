@@ -1,13 +1,7 @@
 name: Golang CI Lint
 
-on:
-  push:
-    branches:
-      - '*'
-  pull_request:
-    branches:
-      - '*'
-
+on: [push, pull_request]
+ 
 jobs:
   lint:
     name: Run Golang CI Lint
