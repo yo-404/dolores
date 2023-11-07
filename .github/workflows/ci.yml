@@ -25,9 +25,6 @@ jobs:
       - name: Verify Go modules
         run: go mod verify
         if: always()
-      - name: Run Go import formatting
-        run: make go-import-fmt
-        if: always()
       - name: Detect git changes
         if: always()
         run: |

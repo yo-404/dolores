@@ -36,6 +36,3 @@ lint-fix: go-import-fmt
 	@go mod tidy
 	@go mod verify
 	@golangci-lint run --timeout=10m --fix "./..."
-
-go-import-fmt:
-	@./hack/fmt-imports.sh
