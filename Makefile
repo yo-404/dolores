@@ -32,7 +32,3 @@ build: gomod
 gorelease_snapshot: build
 	goreleaser release --snapshot --rm-dist
 
-lint-fix: go-import-fmt
-	@go mod tidy
-	@go mod verify
-	@golangci-lint run --timeout=10m --fix "./..."
