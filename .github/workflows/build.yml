@@ -17,4 +17,4 @@ jobs:
           go-version-file: 'go.mod'
           cache: true
       - name: Build
-        run: make
+        run: make build
